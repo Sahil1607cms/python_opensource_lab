@@ -60,4 +60,12 @@ name= "Elephant"
 print(f"Reversed string is {name[::-1]}")
 
 
+file_path = "student_info.txt"
+with open(file_path, "w") as file:
+    file.write("Hi, I am currently pursuing my BTech from Jaypee.")
 
+
+with open("filename.txt", "r") as file:
+    lines = file.readlines()
+for line in reversed(lines):
+    print(line.strip())
