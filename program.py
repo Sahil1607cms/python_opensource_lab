@@ -63,9 +63,26 @@ print(f"Reversed string is {name[::-1]}")
 file_path = "student_info.txt"
 with open(file_path, "w") as file:
     file.write("Hi, I am currently pursuing my BTech from Jaypee.")
+    
 
-
-with open("filename.txt", "r") as file:
+with open("student_info.txt", "r") as file:
     lines = file.readlines()
 for line in reversed(lines):
     print(line.strip())
+    
+
+numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+odd_numbers = [num for num in numbers if num % 2 != 0]
+print("Odd numbers:", odd_numbers)
+
+
+with open("student_info.txt", "r") as file:
+    content = file.read()
+characters = len(content)
+print("Number of characters:", characters)
+
+
+
+
+
+
